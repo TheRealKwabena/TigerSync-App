@@ -36,7 +36,7 @@ const STUDENT = {
   name: 'Jordan',
   major: 'Computer Science',
   gpa: 3.67,
-  credits: 72,
+  credits: 77,
   totalRequired: 120,
   year: 'Junior',
   completedCodes: [
@@ -281,8 +281,7 @@ function CategoryPanel({ title, courses, selectedIds, onToggle, conflictId, icon
       {/* Collapsible body */}
       {open && (
         <div className="bg-ts-deeper p-4">
-          {/* Horizontal scroll carousel */}
-          <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {courses.map((course) => {
               const selected = selectedIds.includes(course.code)
               const isConflict = conflictId === course.code
@@ -293,7 +292,7 @@ function CategoryPanel({ title, courses, selectedIds, onToggle, conflictId, icon
                 <div
                   key={course.code}
                   className={cn(
-                    'flex-shrink-0 w-64 rounded-xl border p-4 space-y-2.5 transition-all duration-200',
+                    'rounded-xl border p-4 space-y-2.5 transition-all duration-200',
                     selected
                       ? 'border-ts-orange bg-[rgba(237,171,0,0.06)]'
                       : isConflict
@@ -413,9 +412,9 @@ function CourseRecommendations() {
   return (
     <div className="space-y-4">
       {/* Section header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center w-8 h-8 rounded-lg orange-gradient">
+          <div className="flex items-center justify-center w-8 h-8 rounded-lg orange-gradient shrink-0">
             <Sparkles size={15} className="text-white" />
           </div>
           <div>
@@ -425,7 +424,7 @@ function CourseRecommendations() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <Badge variant="success">
             <GraduationCap size={11} />
             {120 - STUDENT.credits - totalCredits} credits to graduation
@@ -744,7 +743,7 @@ export default function Advising() {
       <Sidebar />
       <div className="flex flex-col flex-1 overflow-hidden">
         <Header title="Advising" />
-        <main className="flex-1 overflow-y-auto p-8 space-y-6">
+        <main className="flex-1 overflow-y-auto p-4 sm:p-8 space-y-6">
 
           {/* Heading */}
           <div>
@@ -757,17 +756,17 @@ export default function Advising() {
           {/* Advisor card */}
           <Card>
             <CardContent className="p-6">
-              <div className="flex items-start gap-6">
+              <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
                 <div className="flex items-center justify-center w-16 h-16 rounded-2xl orange-gradient text-white font-bold text-xl shrink-0 font-serif">
                   RT
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-start justify-between gap-4">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                     <div>
                       <h3 className="font-serif text-2xl text-ts-primary">Dr. Bharat Rawal</h3>
                       <p className="text-sm text-ts-secondary mt-0.5">Academic Advisor — College of Arts &amp; Science</p>
                     </div>
-                    <div className="flex gap-2 shrink-0">
+                    <div className="flex flex-wrap gap-2">
                       <Badge variant="success">Available Today</Badge>
                       <Badge variant="secondary">Carver Hall 204</Badge>
                     </div>

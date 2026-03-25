@@ -37,8 +37,8 @@ const stats = [
   {
     icon: BookOpen,
     label: 'Credits Taken',
-    value: '72/120',
-    badge: '60%',
+    value: '77/120',
+    badge: '64%',
     badgeVariant: 'secondary',
   },
   {
@@ -218,7 +218,7 @@ export default function Dashboard() {
       <div className="flex flex-col flex-1 overflow-hidden">
         <Header title="Dashboard" />
 
-        <main className="flex-1 overflow-y-auto p-8 space-y-6">
+        <main className="flex-1 overflow-y-auto p-4 sm:p-8 space-y-6">
 
           {/* Welcome */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -352,15 +352,15 @@ export default function Dashboard() {
             <CardContent className="p-5">
               <div className="flex items-center justify-between mb-3">
                 <CardTitle className="text-base">Degree Completion</CardTitle>
-                <span className="text-sm font-bold text-ts-green">60%</span>
+                <span className="text-sm font-bold text-ts-green">64%</span>
               </div>
               <Progress
-                value={60}
+                value={64}
                 indicatorClassName="bg-gradient-to-r from-ts-green to-[#4ade80]"
               />
               <div className="flex items-center justify-between mt-2">
-                <span className="text-xs text-ts-tertiary">72 of 120 credits completed</span>
-                <span className="text-xs text-ts-tertiary">48 credits remaining</span>
+                <span className="text-xs text-ts-tertiary">77 of 120 credits completed</span>
+                <span className="text-xs text-ts-tertiary">43 credits remaining</span>
               </div>
             </CardContent>
           </Card>
