@@ -236,7 +236,7 @@ export default function Dashboard() {
               </div>
             </div>
 
-            <Card className="flex flex-col items-end gap-1 px-5 py-3 border-ts-border-el">
+            <Card className="flex flex-col items-start gap-1 px-5 py-3 border-ts-border-el">
               <span className="text-xs text-ts-muted uppercase tracking-widest">Today</span>
               <span className="text-base font-semibold text-ts-primary">March 24, 2026</span>
               <Badge variant="default">Spring 2026</Badge>
