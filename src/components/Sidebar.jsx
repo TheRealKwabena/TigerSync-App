@@ -72,9 +72,9 @@ export default function Sidebar() {
 
         {/* Navigation */}
         <nav className="flex-1 px-3">
-          <p className="px-3 mb-2 text-[11px] font-semibold tracking-[1px] text-ts-muted uppercase">
+          {/* <p className="px-3 mb-2 text-[11px] font-semibold tracking-[1px] text-ts-muted uppercase">
             Menu
-          </p>
+          </p> */}
           <ul className="space-y-1">
             {navItems.map(({ icon: Icon, label, path }) => {
               const active = pathname === path
