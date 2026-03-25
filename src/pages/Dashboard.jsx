@@ -83,7 +83,7 @@ const actionItems = [
   },
   {
     title: 'Schedule advising appointment',
-    desc: 'Dr. Rebecca Torres — available slots open',
+    desc: 'Dr. Bharat Rawal — available slots open',
     tag: 'Recommended',
     tagVariant: 'secondary',
     done: false,
@@ -231,7 +231,7 @@ export default function Dashboard() {
                   <GraduationCap size={14} className="text-ts-tertiary" /> Junior
                 </span>
                 <span className="flex items-center gap-1.5 text-sm text-ts-secondary">
-                  <User size={14} className="text-ts-tertiary" /> Advisor: Dr. Rebecca Torres
+                  <User size={14} className="text-ts-tertiary" /> Advisor: Dr. Bharat Rawal
                 </span>
               </div>
             </div>

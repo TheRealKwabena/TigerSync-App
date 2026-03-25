@@ -653,7 +653,7 @@ function AppointmentScheduler() {
         <div>
           <p className="font-serif text-xl text-ts-primary">Appointment Requested!</p>
           <p className="text-sm text-ts-secondary mt-1">{MONTHS[cursor.month]} {selectedDay} at {selectedSlot}</p>
-          <p className="text-xs text-ts-muted mt-1">Dr. Torres will confirm within 24 hours.</p>
+          <p className="text-xs text-ts-muted mt-1">Dr. Rawal will confirm within 24 hours.</p>
         </div>
         <Button variant="outline" size="sm" onClick={() => { setBooked(false); setSelectedDay(null); setSelectedSlot(null) }}>
           Schedule Another
@@ -764,12 +764,12 @@ export default function Advising() {
                 <div className="flex-1">
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <h3 className="font-serif text-2xl text-ts-primary">Dr. Rebecca Torres</h3>
-                      <p className="text-sm text-ts-secondary mt-0.5">Academic Advisor — College of Science &amp; Engineering</p>
+                      <h3 className="font-serif text-2xl text-ts-primary">Dr. Bharat Rawal</h3>
+                      <p className="text-sm text-ts-secondary mt-0.5">Academic Advisor — College of Arts &amp; Science</p>
                     </div>
                     <div className="flex gap-2 shrink-0">
                       <Badge variant="success">Available Today</Badge>
-                      <Badge variant="secondary">Foster Hall 204</Badge>
+                      <Badge variant="secondary">Carver Hall 204</Badge>
                     </div>
                   </div>
                   <Separator className="my-4" />
@@ -778,7 +778,7 @@ export default function Advising() {
                       <Mail size={14} className="text-ts-orange shrink-0" />
                       <div>
                         <p className="text-[10px] text-ts-muted uppercase tracking-wider">Email</p>
-                        <p className="text-sm text-ts-primary">rtorres@tigersync.edu</p>
+                        <p className="text-sm text-ts-primary">rawalb@gram.edu</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2.5">
@@ -886,7 +886,7 @@ export default function Advising() {
                   ))}
                   <Button variant="outline" className="w-full mt-1 gap-2">
                     <MessageSquare size={14} />
-                    Message Dr. Torres
+                    Message Dr. Rawal
                   </Button>
                 </CardContent>
               </Card>

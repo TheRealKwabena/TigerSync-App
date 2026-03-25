@@ -33,7 +33,7 @@ const aidStats = [
   {
     icon: Home,
     label: 'Room & Board',
-    value: '$4,200',
+    value: '$6,000',
     badge: 'Paid',
     badgeVariant: 'success',
   },
@@ -79,7 +79,7 @@ const scholarships = [
 
 const balanceItems = [
   { label: 'Tuition',              amount: '$8,500', status: 'Paid',    statusStyle: 'text-ts-green' },
-  { label: 'Room & Board',         amount: '$4,200', status: 'Paid',    statusStyle: 'text-ts-green' },
+  { label: 'Room & Board',         amount: '$6,000', status: 'Paid',    statusStyle: 'text-ts-green' },
   { label: 'Student Fees',         amount: '$1,850', status: 'Paid',    statusStyle: 'text-ts-green' },
   { label: 'Lab & Technology Fee', amount: '$245',   status: 'Overdue', statusStyle: 'text-ts-red'   },
   { label: 'Meal Plan',            amount: '$2,100', status: 'Pending', statusStyle: 'text-ts-orange' },
@@ -189,7 +189,7 @@ export default function FinancialAid() {
                   </Button>
                   <Button variant="outline" className="w-full gap-2">
                     <CalendarDays size={15} />
-                    Set Up Payment Plan
+                    Accept / Pay Fees
                   </Button>
                 </div>
               </CardContent>

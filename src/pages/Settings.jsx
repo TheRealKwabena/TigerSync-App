@@ -159,7 +159,7 @@ export default function Settings() {
     major: 'Computer Science',
     minor: 'Mathematics',
     year: 'Junior',
-    advisor: 'Dr. Rebecca Torres',
+    advisor: 'Dr. Bharat Rawal',
   })
   const updateProfile = (key) => (val) => setProfile((p) => ({ ...p, [key]: val }))
 
